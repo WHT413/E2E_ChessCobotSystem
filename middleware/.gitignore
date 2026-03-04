@@ -1,0 +1,21 @@
+# ============================================================
+#  middleware/.gitignore
+# ============================================================
+
+# ------ Model weights (nếu có) ------
+models/*.pt
+models/*.pth
+models/*.onnx
+
+# ------ Python cache ------
+__pycache__/
+*.pyc
+*.pyo
+
+# ------ macOS rác ------
+.DS_Store
+._*
+
+# ------ Log / output ------
+*.log
+output/

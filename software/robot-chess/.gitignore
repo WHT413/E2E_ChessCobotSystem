@@ -1,0 +1,95 @@
+# ============================================================
+#  software/robot-chess/.gitignore
+# ============================================================
+
+# ------ Frontend (chỉ push backend) ------
+frontend/
+
+# ------ Dependencies ------
+node_modules/
+jspm_packages/
+
+# ------ Logs ------
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ------ Frontend build output ------
+frontend/dist/
+frontend/dist-ssr/
+frontend/.vite/
+frontend/.vite-cache/
+dist/
+dist-ssr/
+
+# ------ TypeScript cache ------
+*.tsbuildinfo
+
+# ------ Environment variables (chứa secrets, không commit) ------
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+backend/.env
+backend/.env.local
+backend/.env.development.local
+backend/.env.test.local
+backend/.env.production.local
+
+# ------ Editor ------
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+*.code-workspace
+
+# ------ OS files ------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ------ Runtime ------
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# ------ Coverage ------
+coverage/
+*.lcov
+.nyc_output/
+
+# ------ Cache ------
+.eslintcache
+.npm
+.cache/
+.parcel-cache/
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# ------ Test ------
+test-results/
+playwright-report/
+test-results.xml
+
+# ------ Misc ------
+*.tgz
+*.bak
+*.backup
+tmp/
+temp/

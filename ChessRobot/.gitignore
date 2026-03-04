@@ -1,0 +1,41 @@
+# ============================================================
+#  ChessRobot/.gitignore
+# ============================================================
+
+# ------ Model weights (file lớn ~50MB mỗi file) ------
+models/*.pt
+models/*.pth
+models/*.onnx
+
+# ------ Log files (có thể rất lớn) ------
+log.txt
+logs.txt
+*.log
+
+# ------ Video test (file lớn) ------
+test/*.mp4
+test/*.avi
+test/*.mov
+test/*.mkv
+test/._*
+test/.DS_Store
+
+# ------ Python cache ------
+__pycache__/
+*.pyc
+*.pyo
+
+# ------ macOS rác ------
+.DS_Store
+._*
+._.DS_Store
+resources/.DS_Store
+resources/._.DS_Store
+
+# ------ Dữ liệu đầu vào / đầu ra (không commit) ------
+data/input/
+data/output/
+data/annotations/
+
+# ------ FEN tạm (nếu có) ------
+seeFen.txt

@@ -1,0 +1,40 @@
+models:
+  corners:
+    path: "best_50e_2s_0.08_t.pt"
+    confidence_threshold: 0.5
+  pieces:
+    path: "pieces_fintuning.pt"
+    confidence_threshold: 0.5
+
+resources:
+  board_images: "resources"
+  piece_images: "resources/pieces" 
+  sample_data: "resources/ChessRender360/rgb"
+
+processing:
+  output_size: [640, 640]
+  edge_threshold: 20
+
+data:
+  input: "data/input"
+  output: "data/output"
+  annotations: "data/annotations"
+
+fen_mapping:
+  white_king: "K"
+  white_queen: "Q"
+  white_rook: "R"
+  white_bishop: "B"
+  white_knight: "N"
+  white_pawn: "P"
+  black_king: "k"
+  black_queen: "q"
+  black_rook: "r"
+  black_bishop: "b"
+  black_knight: "n"
+  black_pawn: "p"
+
+visualization:
+  grid_color: [0, 255, 255]
+  grid_thickness: 3
+  bbox_thickness: 4
