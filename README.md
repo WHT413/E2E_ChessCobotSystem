@@ -213,7 +213,7 @@ cd ChessRobot && python chessrobotAI.py
 
 ---
 
-## Future Worko
+## Future Work
 
 - [ ] Web-based live game monitor (frontend integration)
 - [ ] Support for promotion, en passant, and draw detection
